@@ -1,2 +1,2 @@
-# GTraQEM
-The code for GTraQEM will be released soon
+# GTranQEM
+The code for GTranQEM will be released soon
