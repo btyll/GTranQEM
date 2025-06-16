@@ -1,0 +1,36 @@
+
+model:
+  name: gtranqem
+  use_only_global: False
+  use_global_features: True
+  use_gate_type: True
+  use_qubit_index: True
+  use_T1T2: True
+  use_gate_error: True
+  use_gate_index: True
+  num_layers: 1
+  input_dim: 58
+  hidden_dim: 32 #128 #256
+
+num_epochs: 20
+batch_size: 32
+data_path: '/tmp/standard/all_15q/trotter/incoherent/dataset'
+num_qubits: 15
+exp_type: intra
+train_size: 260
+valid_size: 40
+test_size: 100
+criterion:
+  name: mse
+
+optimizer:
+  name: adam
+  lr: 5.0e-3
+  weight_decay: 1.0e-4
+
+scheduler:
+  name: constant
+
+pdb: False
+
+device: gpu
